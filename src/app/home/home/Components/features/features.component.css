@@ -1,0 +1,9 @@
+.odometer{
+    color: black;
+    font-size: 28;
+}
+.counter-one__single{
+    border-radius:25% 5% 5% 5% !important;
+    background-color: #e7e7e7;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+}

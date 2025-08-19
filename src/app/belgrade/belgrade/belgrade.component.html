@@ -1,0 +1,20 @@
+
+<section class="py-10 mt-120">
+    <div>
+        <div class="relative">
+            <div class="bg">
+                <div id="cover-belgrade-section" class="content ">
+                    <app-cover-belgrade (scrollToBlock)="scrollToTarget($event)"></app-cover-belgrade>
+                    <app-about></app-about>
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <app-about-belgrade></app-about-belgrade>
+        <app-restaurants [idToScroll]="idToScroll"></app-restaurants>
+        <app-facts></app-facts>
+    </div>
+</section>

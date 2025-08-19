@@ -1,0 +1,9 @@
+
+.color-white{
+    color: white !important;
+}
+@media (max-width: 992px){
+    .contact-one__right{
+        margin-left: 0px !important;
+    }
+}

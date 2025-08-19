@@ -1,0 +1,21 @@
+.testimonial-two__top-left>.section-title>h2{
+    color: black;
+}
+.title-1{
+    font-size: 25px;
+}
+.title-2{
+    font-size: 17px;
+    line-height: 24px !important;
+    color:var(--alipes-black) !important;
+}
+.text-1{
+    font-size: 15px;
+    color: var(--alipes-gray) !important;
+}
+.text-2{
+    font-size: 18px;
+}
+.pb-40{
+    padding-bottom: 40px !important;
+}

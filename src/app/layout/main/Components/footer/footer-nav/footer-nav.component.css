@@ -1,0 +1,45 @@
+
+.current{
+    color:var(--najjaca-roza) !important;
+}
+.ml-35{
+    margin-left: 35% !important;
+}
+.menu-title{
+    font-family: var(--alipes-font-two);
+    font-size: 28;
+}
+#menu-menu{
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 967px){
+    .contact-adress-title{
+        text-align: center;
+        margin-bottom: 22px !important;
+    }
+    .menu-title{
+        margin-bottom: 22px !important;
+    }
+    .footer-widget__title{
+        text-align: center;
+    }
+    #menu-menu{
+        margin-bottom: 20px !important;
+    }
+    .ml-35{
+         margin-left: 0% !important;
+         margin-bottom: 20px !important;
+   }
+}
+@media (max-width: 431px){
+    .ml-35{
+        margin-bottom: 5px !important;
+    }
+    .footer-widget__title-box, .footer-widget__title-box{
+        margin-bottom: 0px !important;
+    }
+  .mat-typography h3{
+    margin-bottom: 6px !important;
+  }
+}

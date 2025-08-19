@@ -1,0 +1,54 @@
+<section id="edit" class="py-2 z-999">
+    <h2 class="text-center pb-2">Izmena Bloga</h2>
+    <form [formGroup]="editBlogForm" (ngSubmit)="onSubmit()">
+      <div class="form-row ">
+        <mat-form-field>
+          <mat-label>Naslov</mat-label>
+          <input matInput placeholder="Title" formControlName="title" required>
+        </mat-form-field>
+      </div>
+     
+      <div class=" description-container"> 
+          <label for="description">Opis:</label><br/>
+          <angular-editor matInput class="h-200" formControlName="content" [config]="editorConfig" required></angular-editor>
+      </div>
+    
+
+      <div class="form-row">
+        <mat-form-field>
+          <mat-label>Google Map link (Google Map => Odabir loakcije => Podeli => Ugradi mapu => Kopiraj HTML )</mat-label>
+          <input matInput type="text" placeholder="Google Map link" formControlName="googleMap">
+        </mat-form-field>
+      </div>
+    
+      <div class="form-row mb-5">
+        <div class="w-75 mx-auto">  
+            <label>Trenutna
+              slika: (Ukoliko otpremite novu 
+             sliku ova slika će biti izbrisana.
+              Ukoliko ne otpremite ni jednu sliku ova(stara)
+              slika će ostati sačuvana)!</label>
+       
+            <img [src]="path" alt="" class="left-image mb-3">
+    
+            <mat-form-field class="w-100">
+            <input matInput [placeholder]="'Slika'" [readonly]="true">
+            <input matFileInput type="file" (change)="handleThumbImageInput($event)" accept="image/*">
+            </mat-form-field>
+        </div>
+      </div>
+      
+      <div class="form-buttons buttons">
+        
+            <button mat-raised-button color="light" class="margin-right-50 bg-success color-white " type="submit" [disabled]="editBlogForm.invalid">Sačuvaj</button>
+            
+            <button mat-raised-button color="warn" type="button" (click)="close()">Odustani</button>  
+        
+      </div>
+      <div *ngIf="submiting" class="py-2 mt-4 form-buttons buttons">
+        
+        <p>Ucitavanje...</p>
+    
+      </div>
+    </form>
+    </section>

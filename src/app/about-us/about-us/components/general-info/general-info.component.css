@@ -1,0 +1,112 @@
+#bg-general-info{
+    background-image: url("/assets/images/values-1-1.jpg");
+}
+#values-one_bg{
+    background-image: url("/assets/images/values-1-1.jpg");
+}
+.white-space{
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+.text-bg{
+    font-size: 18px;
+    text-align: justify;
+    color: var(--alipes-black);
+    font-weight: 600;
+}
+
+.wrapper{
+    padding: 18px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+
+.rezervisite{
+    color:var(--jaka-roza) !important;
+}
+.font-17{
+    font-size: 17px !important;
+}
+.main-text{
+
+}
+.kvacica{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: var(--jaka-roza);
+    border-radius: 50%;
+    font-size: 9px;
+    color: var(--roze-krem1);
+}
+.kvacica-pravila{
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: var(--jaka-roza);
+    border-radius: 50%;
+    color: var(--roze-krem1);
+}
+.icon{
+    color:var(--jaka-roza) !important;
+}
+.title-1{
+    font-size: 29px;
+    font-family: var(--alipes-font-two);
+    letter-spacing: var(--alipes-letter-spacing);
+}
+.title-2{
+    font-size: 18px;
+    color:var(--alipes-black) !important;
+}
+.text-1{
+    font-size: 15px;
+    color: var(--alipes-gray) !important;
+}
+.text-2{
+    font-size: 18px;
+}
+.text p{
+    margin:0 !important;
+    margin-left: 10px !important;
+    color:var(--jaka-roza) !important;
+}
+.right-block{
+    padding: 90px 0 !important;
+    
+}
+.wrapper-general-info{
+    background-color: var(--roze-krem2);
+}
+.bg-left{
+    position: relative;
+    height: 100%;
+}
+.right-block::after {
+    content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 4px;
+  height: 80%;
+  background-color: var(--jaka-roza);
+  transform: translateX(-50%);
+  border-radius:50%;
+  }
+  .mb-120{
+    margin-bottom: 120px;
+  }

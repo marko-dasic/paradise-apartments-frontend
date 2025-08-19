@@ -1,0 +1,44 @@
+@media (max-width: 1092px) {
+    .page-header__overly{
+        top:0px !important;
+        height: 250px !important;
+    } 
+    .page-header__inner{
+        padding: 153px 0 30px !important;
+    }
+
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-24{
+    font-size: 24px;
+}
+.title{
+    font-size: 42px;
+}
+.subtitle{
+    font-size: 36px;
+}
+.break-word{
+    word-wrap: break-word !important;
+}
+.firstWord{
+    color:var(--slaba-roza) !important;
+    line-height: 1.5;
+}
+.firstWord:hover{
+    color: var(--jaka-roza) !important;
+}
+@media (max-width: 1000px)
+{
+    .subtitle{
+        font-size: 31px !important;
+    }
+    .title{
+        font-size: 33px !important;
+    }
+}

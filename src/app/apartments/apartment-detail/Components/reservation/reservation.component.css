@@ -1,0 +1,106 @@
+.close-icon{
+    position: absolute;
+    padding-top: 0px;
+    padding-right: 13px;
+    right: 0;
+    right: 10px;
+    top: 3px;
+    font-size: 35px;
+    background: white;
+    z-index: 9999;
+    cursor: pointer;
+
+}
+input[type="date"]:disabled {
+    background-color: #eee;
+  }
+  mat-form-field{
+    width: 80%;
+    margin: 0 auto;
+}
+#edit{
+    height: 80vh;
+    width: 95% !important;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.form-dialog-wrapper{
+    width: 75%;
+}
+.form-row{
+    display: flex !important;
+    justify-content: center !important;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.color-red{
+    color: red !important;
+}
+mat-form-field{
+    margin-bottom: 25px !important;
+}
+.mat-form-field.mat-focused .mat-form-field-outline {
+    outline-color: rgba(0, 0, 0, 0.12); /* Promenite boju okvira po potrebi */
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+.title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.color-jaca-roza{
+    color: var(--jaka-roza);
+}
+.sumPrice{
+    background-color: blueviolet;
+}
+.bg-color-primary{
+    background-color: var(--jaka-roza);
+}
+.bg-color-secondary{
+ background-color: #673ab7;
+}
+.color-white{
+    color: white;
+}
+.reservation-info{
+    margin-top: 30px  !important;
+}
+.desc-reservation{
+    width: 75%;
+    margin: 0 auto 40px auto !important;
+}
+.reservation-info{
+    list-style-type: none !important;
+}
+@media (max-width: 996px) {
+    .form-dialog-wrapper{
+        width: 95%;
+    }
+    #edit{
+        width: 100% !important;
+    }   
+  .pl-0-mobile{
+    padding-left: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+    .desc-reservation{
+        width: 95%;
+    }
+    .submit-reservation-btn{
+        width: 100%;
+    }
+}
+.pl-10{
+    padding-left: 40px !important;
+}
+

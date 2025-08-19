@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Pocetna",
+        "link":"/"
+    },
+    {
+        "name":"Svi apartmani",
+        "link":"apartments"
+    },
+    {
+        "name":"Kontakt",
+        "link":"contact"
+    },
+    {
+        "name":"O nama",
+        "link":"aboutus"
+    },
+    {
+        "name":"O Beogradu",
+        "link":"belgrade"
+    },
+    {
+        "name":"Log In",
+        "link":"login"
+    },
+    {
+        "name":"Registracija",
+        "link":"registration"
+    }
+]

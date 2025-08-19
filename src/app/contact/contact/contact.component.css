@@ -1,0 +1,28 @@
+.blago-siva-narandzasta{
+    background-color:var(--roze-krem1); 
+}
+.contact-section{
+    position: relative;
+    bottom:0px !important;
+}
+.color-white{
+    color:white !important;
+}
+.contact-page{
+    padding: 10px 0 20px ;
+}
+.subtitle{
+    font-size: 25px;
+    line-height: 1.5;
+}
+.title{
+    font-size: 34px;
+}
+.google-map__two{
+    mix-blend-mode: normal !important;
+}
+@media (max-width: 992px) {
+    .section-title{
+        margin-bottom: 30px !important;
+    }
+}   

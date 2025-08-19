@@ -1,0 +1,82 @@
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  #register-wrapper{
+    width: 75%;
+    margin-top: 150px !important;
+  }
+
+  mat-card {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  mat-card-title {
+    text-align: center;
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .forma{
+    margin-top: 80px;
+    margin: 0 20px;
+  }
+  @media (max-width: 600px){
+    #register-wrapper{
+      margin-top: 4rem !important;
+      width: 95% !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 0 auto !important;
+    }
+    .forma{
+      margin: 0 !important;
+    }
+  }
+  /* .submit-button{
+    margin-bottom:200px !important;
+  } */
+  .register-text{
+    color:var(--jaka-roza) !important;
+  }
+  .gray-color{
+    color: gainsboro !important;
+  }
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+
+  }
+  .disabled-button {
+    background-color: gray;
+    color: white;
+  }
+  .error-message {
+    color: red;
+  }
+  
+  .form-container{
+    width: 100% !important;
+  }
+
+  .reg-error{
+    color: red;
+    font-size: 19px;
+  }
+  .my-card{
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .color-white{
+    color: white !important;
+  }

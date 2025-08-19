@@ -1,0 +1,67 @@
+<div class="table-container margin-top-150 ">
+    <div class="d-flex">
+        <h2 class="color-white">Blogovi</h2>
+        <button mat-button color="green" class="add-apartment color-white px-3 py-2" (click)="openCreateBlogDialog()">
+            <!-- <mat-icon>delete</mat-icon> -->+ Blog
+        </button>
+    </div>
+    <ng-container *ngIf="!hasBlogs && !loading">
+        <div class="container d-flex">
+            <div class="alert">
+                <h3 class="filter-apartment-subtitle">Nažalost trnutno nema niti jednog bloga.</h3>
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="loading">
+        <div class="container d-flex justify-content-center">
+            <div class="alert">
+                <div class="spinner" ></div>
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="hasBlogs" >
+
+        <mat-table [dataSource]="blogs" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef>Naslov</mat-header-cell>
+            <mat-cell *matCellDef="let blog">{{blog.title}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="update" >
+            <mat-header-cell *matHeaderCellDef class="w-100 text-center"></mat-header-cell>
+            <mat-cell *matCellDef="let blog">
+            <button mat-icon-button color="success" class="w-100" (click)="updateBlogDialog(blog)">
+                Izemni
+                <!-- <mat-icon>delete</mat-icon> -->
+            </button>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="delete" >
+            <mat-header-cell *matHeaderCellDef class="w-100 text-center"></mat-header-cell>
+            <mat-cell *matCellDef="let blog">
+            <button mat-icon-button color="warn" class="w-100" (click)="deleteBlogDailog(blog)">
+                Obirši
+                <!-- <mat-icon>delete</mat-icon> -->
+            </button>
+            </mat-cell>
+        </ng-container>
+    
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+
+        </mat-table>
+
+    </ng-container>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

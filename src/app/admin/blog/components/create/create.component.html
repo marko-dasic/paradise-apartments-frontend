@@ -1,0 +1,57 @@
+<section id="edit" class="py-2 z-999">
+    <h2 class="text-center pb-2">Kreiraj Novi Blog</h2>
+    <form [formGroup]="insertBlogForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-row">
+        <mat-form-field>
+        <mat-label>Nalov</mat-label>
+          <input matInput  formControlName="title" required>
+        </mat-form-field>
+      </div>
+      <div class="description-container">        
+        <label for="description">Opis:</label><br/>
+        <angular-editor matInput class="h-200" formControlName="content" [config]="editorConfig" required></angular-editor>
+       </div>
+      <div class="form-row">
+        <mat-form-field>
+        <mat-label>Radno vreme (opciono)</mat-label>
+          <input matInput  formControlName="workTime" >
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field>
+        <mat-label>Link ka adresi</mat-label>
+          <input matInput  formControlName="googleMap" >
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field>
+        <mat-label>Adresa (opciono)</mat-label>
+          <input matInput  formControlName="adress" >
+        </mat-form-field>
+      </div>
+
+      <div class="form-row mb-5">
+        <div class="w-75 mx-auto">  
+            <label>Slika!</label>
+            <mat-form-field class="w-100">
+            <input matInput [placeholder]="'Slika'" [readonly]="true">
+            <input matFileInput type="file" (change)="handleThumbImageInput($event)" accept="image/*">
+            </mat-form-field>
+        </div>
+      </div>
+         
+      <div class="form-buttons buttons">
+            <button mat-raised-button color="light" class="margin-right-50 bg-success color-white " type="submit" [disabled]="insertBlogForm.invalid">Kreiraj</button>
+            <button mat-raised-button color="warn" type="button" (click)="close()">Odustani</button>  
+      </div>
+      <div class="form-row">
+        <p class="color-red">{{insertError}}</p>
+      </div>
+      <div *ngIf="submiting" class="py-2 mt-5 form-buttons buttons">
+    
+        <p>Ucitavanje...</p>
+    
+      </div>
+    </form>
+    </section>

@@ -1,0 +1,24 @@
+<app-cover></app-cover>
+<section class="contact-section">
+    <div class="container blago-siva-narandzasta py-5">
+        
+        <section class="contact-page">
+            <div class="container ">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline title">Kontaktirajte Nas</span>
+                    <h2 class="section-title__title  subtitle">Pišite Nam</h2>
+                </div>
+                <div class="contact-page__inner">
+
+                    <app-contact-form [FullName]="fullName" [Email]="email"></app-contact-form>
+                    *Očekuji te odgovor u najkracem mogucem roku!
+                </div>
+            </div>
+        </section>
+
+        <app-location-and-contact ></app-location-and-contact>
+        <div class="pt-3">
+            <app-google-map [color]="mapColor"></app-google-map>
+        </div>
+    </div>
+</section>

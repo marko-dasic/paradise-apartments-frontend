@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Apartmani",
+        "link":"/apartments"
+    },
+    {
+        "name":"Upravljanje Apartmanima",
+        "link":"/admin/apartments"
+    },
+    {
+        "name":"Rezervacije",
+        "link":"/admin/reservations"
+    },
+    {
+        "name":"Kategorije",
+        "link":"/admin/category"
+    },
+    {
+        "name":"Blogovi",
+        "link":"/admin/blog"
+    },
+    {
+        "name":"Korisnici",
+        "link":"/admin/user"
+    },
+    {
+        "name":"Logout",
+        "link":"/logout"
+    }
+]

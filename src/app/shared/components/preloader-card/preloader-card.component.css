@@ -1,0 +1,95 @@
+.primary { font-family: Roboto; }
+.secondary { font-family: Lato; }
+.tertiary { font-family: Arvo; }
+.last { font-family: Montserrat; }
+
+.postLoadCard{
+    margin-top: 200px !important;
+  width: 80%;
+}
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Loading Content Question-Card Component. */
+
+/* Loading Content Card Component */
+.postLoadCard {
+  padding: 10px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+  border: 1px solid rgba(0, 0, 0, .09);
+  border-radius: 2.5px;
+  border-color: rgba(0, 0, 0, 0.08);
+  background: rgba(235, 235, 235, 0.8);
+  margin: 0 0 18px;
+  
+}
+.loadingAvatar {
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin: 5px;
+  margin-bottom: 7.5px;
+  background: linear-gradient(90deg, rgba(207, 216, 220, .15), rgba(207, 216, 220, .35), rgba(207, 216, 220, .15));
+  -webkit-animation: loadanimation 1.4s ease infinite;
+  -moz-animation: loadanimation 1.4s ease infinite;
+  animation: loadanimation 1.4s ease infinite;
+}
+.loadingAnim, .loadingText {
+  margin: 0 0 16px;
+  max-width: 500px;
+  padding: 6px;
+  width: 100%;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(207, 216, 220, .15), rgba(207, 216, 220, .35), rgba(207, 216, 220, .15));
+  -webkit-animation: loadanimation 1.4s ease infinite;
+  -moz-animation: loadanimation 1.4s ease infinite;
+  animation: loadanimation 1.4s ease infinite;
+  background-size: 600% 600%;
+  &:first-child {
+    padding: 16px;
+    max-width: 400px;
+  }
+}
+.bodyWrap {
+  padding: 20px 16px 0;
+}
+.contentWrap {
+    padding: 20px 16px 0;
+  .loadingAnim{
+    &:nth-child(even) { width: 90%; }
+    &:nth-child(odd) { width: 100%; }
+  }
+}
+.footerWrap {
+  margin: 24px 0 0;
+  padding: 24px 0;
+}
+
+
+
+@-webkit-keyframes loadanimation {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+@-moz-keyframes loadanimation {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; } 
+  100% { background-position: 0 50%; }
+}
+@keyframes loadanimation {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
